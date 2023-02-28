@@ -2,6 +2,10 @@
 	flex-grow: 0 !important;
 }
 
+.navbar-dark {
+	opacity: 0.5;
+}
+
 #slides-iframe {
 	margin-top: 2em;
 }
@@ -236,4 +240,20 @@ hr.divider {
 }
 
 
+.event-page .hero {
+	height: 100vh;
+	background-size: cover;	
+	background-position: 50%;
+}
 
+.monterrey .hero {
+    background-image: url(/images/mty-back.jpg);
+}
+
+.bogota .hero {
+    background-image: url(/images/bog-back.jpg);
+}
+
+.aguascalientes .hero {
+    background-image: url(/images/ags-back.jpg);
+}

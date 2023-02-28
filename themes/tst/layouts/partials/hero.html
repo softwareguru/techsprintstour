@@ -1,33 +1,28 @@
-{{ $data := index .Site.Data }}
 
-<!-- banner -->
-{{ with $data.homepage.banner }}
-<section class="section banner"> 
-  <div class="auto-container">
-    <div class="hero-info">
-      <!--{{ with .title }}<h1>{{ . }}</h1>{{ end }} -->
-      <img src="images/tacops-logo2023.webp" class="logo-hero img-fluid" alt="">
-      <div class="">
-        {{ with .tagline }}<h3 class="tagline">{{ . }}</h3>{{ end }}
-      </div>
-      
-      {{ with .meta }}<h4>{{ . }}</h3>{{ end }}
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/images/mty-back.jpg" alt="Monterrey">
     </div>
-
-    {{ if .button1.enable }}
-    {{ with .button1 }}
-    <a href="{{ .link | relURL }}" target="_blank" class="btn btn-banner1 mt-3 ml-4">{{ .label }}</a>
-    {{ end }}
-    {{ end }}
-
-    {{ if .button2.enable }}
-    {{ with .button2 }}
-    <a href="{{ .link | relURL }}" target="_blank" class="btn btn-banner2 mt-3 ml-4">{{ .label }}</a>
-    {{ end }}
-    {{ end }}
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/images/ags-back.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/images/bog-back.jpg" alt="Third slide">
+    </div>
   </div>
-</section>
-{{ end }}
-<!-- /banner -->
-
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 

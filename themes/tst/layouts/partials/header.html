@@ -1,10 +1,8 @@
 <!-- Navigation Start -->
 <header>
-  <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-secondary fixed-top">
+  <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <div class="container" style="align-items: flex-end;">
-      <a class="navbar-brand" href='{{ "/" | relURL }}'>
-        <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}"  class="img-fluid logo-b">
-      </a>
+      <a class="navbar-brand" href='{{ "/" | relURL }}'>{{ .Site.Title }}</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">

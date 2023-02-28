@@ -1,0 +1,119 @@
+.bg-black {
+	background: #000;
+}
+
+.letter-spacing {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.text-sm {
+	font-size: 14px;
+}
+
+.bg-gray {
+	background: #eee;
+}
+
+
+.sponsor-strip.platinum {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+    .sponsor-item {
+	    width: 28%;
+    	padding: 0 1em;
+
+ 	    @include tablet {
+		    width: 50%;
+    	}
+
+	    @include mobile {
+		    width: 80%;
+    	}
+    }
+}
+
+.sponsor-strip.gold {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+    .sponsor-item {
+	    width: 26%;
+    	padding: 0 .8em;
+
+ 	    @include tablet {
+		    width: 32%;
+    	}
+
+	    @include mobile {
+		    width: 49%;
+    	}
+    }
+}
+
+.sponsor-strip.silver {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+
+    .sponsor-item {
+	    width: 18%;
+    	padding: 0 .1em;
+
+ 	    @include tablet {
+		    width: 24%;
+    	}
+
+	    @include mobile {
+		    width: 32%;
+    	}
+    }
+}
+
+.sponsor-strip.community {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+    .sponsor-item {
+	    width: 18%;
+    	padding: 0 .2em;
+
+ 	    @include tablet {
+		    width: 20%;
+    	}
+
+	    @include mobile {
+		    width: 25%;
+    	}
+    }
+}
+
+
+
+.sponsor-strip.partner {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 50px;
+	justify-content: space-between;
+	justify-items: center;
+	align-items: center;
+
+	@include tablet {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 40px;
+	}
+
+	@include mobile {
+		grid-template-columns: 1fr 1fr;
+	}
+
+}

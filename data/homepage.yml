@@ -1,0 +1,67 @@
+############################# banner ################################
+banner:
+  enable : true
+  greeting: Bienvenido a
+  title : "TacOps"
+  tagline: "Opera tu infraestructura con agilidad y eficiencia"
+  meta: "Ciudad de México | Fecha por confirmar"
+  logo : "/images/logo.svg"
+  venue : ""
+  button1:
+    enable : true
+    label : "Me interesa participar"
+    link : "preregistro"
+  button2:
+    enable : false
+    label : "Me interesa patrocinar"
+    link : "tickets"
+
+
+############################## Event ##############################
+event_info:
+  enable : true
+  features: 
+    - label : "¿Qué es TacOps?"
+      text : "Es una conferencia enfocada en explorar herramientas y prácticas para gestionar infraestructura y operaciones de cómputo de forma ágil y eficiente para brindar servicios digitales con alta confiabilidad."
+      icon-class: "fa fa-info" 
+      cta_text: "Conoce más"
+      cta_link: "about"
+    - label : "¿Qué temas se manejarán?"
+      text : "TacOps se enfocará en tres grandes áreas temáticas: Site Reliability Engineering (SRE), GitOps, FinOps/GreenOps."
+      icon-class: "fa fa-group" 
+      cta_text: "Ver propuestas recibidas"
+      cta_link: "propuestas"
+    - label : "¿Cuando y donde será?"
+      text : "Estamos definiendo la sede y fecha, y para ello dependemos de tu interés."
+      icon-class: "fa fa-table" 
+      cta_text: "Registra tu interés"
+      cta_link: "preregistro"
+
+####################### Timer #############################
+timer:
+  enable : false
+
+####################### CTA #############################
+cta:
+  enable : true
+  message: > 
+    TacOps es la primer conferencia en México enfocada en explorar herramientas y prácticas para gestionar infraestructura 
+    y operaciones de cómputo de forma ágil y eficiente para brindar servicios digitales con alta confiabilidad.
+  label: No dejes pasar esta oportunidad
+  link: https://sg.com.mx/datadays/tickets
+  
+
+####################### pricing #############################
+pricing:
+  enable : false
+
+####################### sponsors #############################
+sponsors:
+  enable : true
+
+
+datalive:
+  enable : true
+  title : "Noticias recientes"
+  content : "Accusantium provident suscipit dicta magni dolor deserunt nam obcaecati non veritatis optio."
+  # blog content comes from "content/blog" folder

@@ -1,0 +1,85 @@
+{{ define "main" }}
+
+{{ $data := index .Site.Data }}
+
+<!-- hero -->
+{{ if $data.homepage.banner.enable }}
+{{ partial "hero.html" . }}
+{{ end }}
+<!-- /hero -->
+
+
+<!-- cta_cfp  -->
+{{ if $data.homepage.cta.enable }}
+{{ partial "cta.html" . }}
+{{ end }}
+<!-- /cta_cfp -->
+
+<br>
+
+<!-- Tracks -->
+
+{{ partial "tracks.html" . }}
+
+<!-- /Tracks -->
+
+<br>
+
+
+<!-- event_info  -->
+{{ if $data.homepage.event_info.disable }}
+{{ partial "event_info.html" . }}
+{{ end }}
+<!-- /event_info -->
+
+
+<!-- sponsor -->
+{{ if $data.homepage.sponsors.disable }}
+{{ partial "sponsor.html" . }}
+{{ end }}
+<!-- /sponsor -->
+
+<!-- blog -->
+{{ if $data.homepage.datalive.disable }}
+{{ partial "noticias.html" . }}
+{{ end }}
+<!-- /blog -->
+
+<!-- schedule -->
+{{ if $data.homepage.schedule.enable }}
+{{ partial "schedule.html" . }}
+{{ end }}
+<!-- /schedule -->
+
+<!-- pricing -->
+{{ if $data.homepage.pricing.enable }}
+{{ partial "pricing.html" . }}
+{{ end }}
+<!-- /pricing  -->
+
+<!-- speaker -->
+{{ if $data.homepage.speakers.enable }}
+<section class="section speakers">
+  <div class="container">
+    {{ with $data.homepage.speakers }}
+    {{ partial "section_title.html" . }}
+    {{ end }}
+    <div class="speakers-wrapper">
+      {{ range (where (where .Site.RegularPages "Type" "speakers") ".Params.featured" true) }}
+      <div class="speaker">
+        <img src="{{ .Params.Image | relURL }}" alt="{{ .Title }}" class="img-fluid rounded-circle">
+        <h4 class="mb-0 mt-3"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+        <p>{{ .Params.Designation }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- /speaker -->
+
+
+
+
+
+{{ end }}

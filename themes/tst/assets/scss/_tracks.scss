@@ -1,0 +1,41 @@
+
+.tracks h2 {
+    text-align: center;
+    font-size: 4em;
+    color: $secondary-color;
+}
+
+.card-tracks{
+    border-radius: 20px 20px 20px 20px;
+  }
+
+  .card-body{
+    text-align: center;
+  }
+
+  .card-title-tracks{
+    color: white;
+    text-shadow: #202020 2px 2px 2px;
+    padding: 10px 0px 20px;
+  }
+
+  .card-text-tracks{
+    color: white;
+    text-shadow: #202020 2px 2px 2px;
+  }
+
+  .card-body p{
+    font-size: 1.2em;
+}
+
+.bg1 {
+  background-color: $primary-color;
+}
+
+.bg2 {
+  background-color: $yellow;
+}
+
+.bg3 {
+  background-color: $green;
+}

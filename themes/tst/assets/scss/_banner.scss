@@ -1,0 +1,131 @@
+.section.banner {
+  background-image: url(/tacops/images/tacops-background.webp);
+  background-size: cover;
+  background-position: center;
+  // background-attachment: fixed;
+  height: 100vh;
+  padding-top: 20vh;
+  text-align: center;
+  color: white;
+  text-shadow: #202020 2px 2px 2px;
+
+  @media (max-width:768px) {
+
+    padding-top: 35vh;    
+
+    .hero-title {
+      width: 300px;
+      margin-top: 10px;
+      font-size: 46px;
+    }
+  }
+
+  p {
+    font-size: 1.8em;
+    margin: 1.2em auto;
+  }
+
+  @media (max-height:720px) {
+    height: 720px;
+  }
+
+  .scroll-link {
+    margin-top: 30px;
+  }
+
+  .scroll-link img {
+    height: 30px;
+  }
+
+  .btn-banner1 {
+    background-color: #2fc4ee;
+    color: $white;
+    font-weight: 600;
+    letter-spacing: .1em;
+    border-radius: 15px 15px 15px 15px;
+
+    &:hover {
+      background-color: #00a530;
+      color: $white;
+    }
+  }
+
+  .btn-banner2 {
+    background-color: #ed1b34;
+    color: $white;
+    font-weight: 600;
+    letter-spacing: .1em;
+    border-radius: 15px 15px 15px 15px;
+
+    &:hover {
+      background-color: #ff6060;
+    }
+  }
+
+
+}
+
+.hero-info {
+  color: #ffffff !important;
+  font-family: $heading-font;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+
+	@include tablet {
+    width: 80%;
+    margin-top: -70px;
+	}
+	@include mobile {
+		margin-top: 0px;
+    width: 100%;
+	}
+
+}
+
+.hero-info h2 {
+  font-weight: 300;
+  font-size: 55px;
+  text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
+
+}
+
+.hero-info h1 {
+  font-weight: 800;
+  font-size: 80px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  line-height: 100%;
+  margin-bottom: 15px;
+
+  @media (max-width: 768px) {
+    font-size: 54px;
+  }
+}
+
+.hero-info h3 {
+  font-weight: 600;
+  font-size: 28px;
+  
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.hero-info h4 {
+  font-weight: 400;
+  font-size: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}

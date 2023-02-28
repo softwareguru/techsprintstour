@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{ partial "page-title.html" . }}
+
+<!-- Speakers Section -->
+<section class="speakers-section-three" id="speakers-section">
+  <div class="container">
+    <div class="lead my-3">{{ .Content }}</div>
+    <div class="speaker-strip">
+      {{ range where (where .Site.Pages.ByTitle "Type" "speakers") "Kind" "term" }}
+      <div class="speaker-item text-center"> 
+        <div class="headshot mb-2">
+          <img src="{{ with .Params.images }}{{ index . 0 | relURL}}{{else}}{{$.Site.BaseURL}}images/speakers/speaker.jpg{{ end }}" alt="" class="img-fluid rounded-circle">          
+          <a href="{{ .Permalink }}">
+            <div class="overlay"></div>
+          </a>
+            
+        </div>
+        <div class="info">
+          <h4 class="name"><a href="{{.Permalink | relURL }}">{{ .Title }}</a></h4>
+          <p class="designation">{{ .Params.Designation }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<!-- End Speakers Section -->
+
+{{ end }}

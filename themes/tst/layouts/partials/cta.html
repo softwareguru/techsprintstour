@@ -1,0 +1,12 @@
+{{ $data := index .Site.Data }}
+{{ with $data.homepage.cta }}
+    <section class="call-to-action">
+        <div class="container">
+            <div class="content-box">
+                <p>{{ .message }}
+                </p>
+            </div>
+        </div>
+        <hr class="divider">
+    </section>
+{{ end }}    

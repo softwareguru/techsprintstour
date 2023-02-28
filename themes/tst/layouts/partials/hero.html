@@ -1,0 +1,33 @@
+{{ $data := index .Site.Data }}
+
+<!-- banner -->
+{{ with $data.homepage.banner }}
+<section class="section banner"> 
+  <div class="auto-container">
+    <div class="hero-info">
+      <!--{{ with .title }}<h1>{{ . }}</h1>{{ end }} -->
+      <img src="images/tacops-logo2023.webp" class="logo-hero img-fluid" alt="">
+      <div class="">
+        {{ with .tagline }}<h3 class="tagline">{{ . }}</h3>{{ end }}
+      </div>
+      
+      {{ with .meta }}<h4>{{ . }}</h3>{{ end }}
+    </div>
+
+    {{ if .button1.enable }}
+    {{ with .button1 }}
+    <a href="{{ .link | relURL }}" target="_blank" class="btn btn-banner1 mt-3 ml-4">{{ .label }}</a>
+    {{ end }}
+    {{ end }}
+
+    {{ if .button2.enable }}
+    {{ with .button2 }}
+    <a href="{{ .link | relURL }}" target="_blank" class="btn btn-banner2 mt-3 ml-4">{{ .label }}</a>
+    {{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+<!-- /banner -->
+
+

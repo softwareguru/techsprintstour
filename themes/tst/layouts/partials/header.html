@@ -1,0 +1,59 @@
+<!-- Navigation Start -->
+<header>
+  <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-secondary fixed-top">
+    <div class="container" style="align-items: flex-end;">
+      <a class="navbar-brand" href='{{ "/" | relURL }}'>
+        <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}"  class="img-fluid logo-b">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+
+      <!--  MAIN MENU  -->
+      <div class="navbar-collapse collapse text-center" id="navigation">
+        <ul class="navbar-nav mx-auto">
+          {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ .Name }}
+              </a>
+              <div class="dropdown-menu">
+                {{ range .Children }}
+                <a class="dropdown-item" href="{{ .URL | relURL }}">{{ .Name }}</a>
+                {{ end }}
+              </div>
+            </li>
+            {{ else }}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ .URL | relURL }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+          {{ end }}
+
+     
+        
+        {{ if .Site.Params.navigation_button.enable }}
+        {{ "<!-- get start btn -->" | safeHTML }}
+        <a href="{{ .Site.Params.navigation_button.link | absURL }}"
+          class="theme-btn btn-style-one text-white px-3">{{ .Site.Params.navigation_button.label }}</a>
+        {{ end }}
+      
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+   
+   window.addEventListener("DOMContentLoaded" , () => {
+        var element = document.getElementById("navbar");
+        document.addEventListener("scroll", () => {
+        element.setAttribute("style","background-color: black");
+        });
+    });
+</script>
+<!-- Navigation End -->

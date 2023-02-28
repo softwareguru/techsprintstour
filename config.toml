@@ -1,0 +1,116 @@
+
+######################## default configuration ####################
+baseURL = "https://techsprintstour.com/"
+title = "Tech Sprints Tour"
+enableRobotsTXT = true
+RemovePathAccents = true
+
+googleAnalytics = ""
+
+theme = "tst"
+# post pagination
+paginate = "10"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+speaker = "speakers"
+
+# output
+[outputs]
+home = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+############################## navigation ###############################
+[menu]
+
+
+  [[menu.main]]
+  name = "Acerca de"
+  URL = "about"
+  weight = 1
+
+  [[menu.main]]
+  name = "Monterrey"
+  URL = "events/monterrey"
+  weight = 2
+
+  [[menu.main]]
+  name = "Aguascalientes"
+  URL = "events/aguascalientes"
+  weight = 3
+
+  [[menu.main]]
+  name = "Bogotá"
+  URL = "events/bogota"
+  weight = 4
+
+
+#################### default parameters ################################
+[params]
+logo = "images/tst-logo.svg"
+home = "Home"
+
+# Meta data
+description = "Gira de eventos para intercambiar conocimiento y hacer networking con otros profesionistas de software en tu ciudad."
+images = ["images/card-2023.jpg"]
+twitter_user = "@revistasg"
+email = "eventos@sg.com.mx"
+author = "Software Guru"
+disclaimer = ""
+
+
+############################# social icon ############################
+[[params.social]]
+icon = "fab fa-twitter"
+link = "https://twitter.com/RevistaSG"
+
+[[params.social]]
+icon = "fab fa-youtube"
+link = "https://www.youtube.com/c/softwareguru"
+
+[[params.social]]
+icon = "fab fa-linkedin"
+link = "https://www.linkedin.com/company/softwareguru"
+
+[[params.social]]
+icon = "fas fa-envelope"
+link = "mailto:hola@techsprintstour.com"
+
+[[params.footer_resources]]
+name = "Código de Conducta"
+link = "coc"
+
+[[params.footer_resources]]
+name = "Privacidad de datos"
+link = "privacidad"
+
+
+
+############################# Plugins ##############################
+# CSS Plugins
+[[params.plugins.css]]
+link = "https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+
+[[params.plugins.css]]
+link = "https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.css"
+
+
+# JS Plugins
+[[params.plugins.js]]
+link = "https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+
+[[params.plugins.js]]
+link="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+
+[[params.plugins.js]]
+link="https://kit.fontawesome.com/2e09285ae6.js"
+
+[[params.plugins.js]]
+link="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.js"
+

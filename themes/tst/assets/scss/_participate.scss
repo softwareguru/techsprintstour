@@ -1,0 +1,51 @@
+.participate-about h1{
+    color: $red;
+}
+
+
+.participate-img img{
+    width: 550px;
+    float: right;
+    margin-top: 100px;
+    @media (max-width: 1625px) {
+        width: 450px;
+        margin-top: 280px;
+      }
+      @media (max-width: 1175px) {
+        display: none;
+    }
+}
+
+.participate-about h1, h2 {
+    font-size: 4.1em;
+    @media (max-width: 775px) {
+        font-size: 2.4em;
+    }
+}
+
+.img-participate{
+    float: right;
+    margin-top: 150px;
+    border: 25px solid #00a662; 
+    padding: 8px;
+    
+}
+
+.participate-about{
+    width: 75%;
+    padding: 80px 200px 110px 160px;
+
+      @media (max-width: 1175px) {
+        
+        width: 100%;
+        padding: 30px 30px 30px 30px;
+    }
+}
+
+
+.line-titles{
+    height: 2px;
+    width: 50%;
+    background-color: $red;
+}
+

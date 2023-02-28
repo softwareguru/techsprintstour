@@ -1,0 +1,30 @@
+{{ $data := index .Site.Data }}
+{{ with $data.sponsors }}
+<!--Clients Section-->
+<section class="sponsors mb-4">
+  <div class="container">
+    <div class="sec-title text-center mt-4">
+      <h2>{{.title}}</h2>
+      <p>{{ .subtitle }}</p>
+    </div>
+    {{ range .sponsor_group }}
+    <div class="text-center">{{ humanize .title }}</div>
+    <div class="sponsor-strip {{ .title }} mb-4 py-2">
+      {{ range .sponsor }}
+      <div class="sponsor-item">
+        {{ if and (ne .link "") (ne .link "#") }}
+        <a href="{{ .link }}"><img src="{{ .logo | relURL }}" alt="" class="img-fluid"></a>
+        {{ else }}
+        <img src="{{ .logo | relURL }}" alt="" class="img-fluid">
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+<!--End Clients Section-->
+
+{{ end }}
+

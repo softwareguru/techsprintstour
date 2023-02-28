@@ -1,0 +1,225 @@
+// new seccion
+
+.about-section{
+	background-image: url(/dataday/images/acerca-de-dataday.jpg); 
+    width: 90%; 
+    background-size: cover;
+    background-position: center; 
+    border-radius: 0px 190px 0px 0px;
+
+	@media (max-width: 1625px) {
+        width: 100%;
+		border-radius: 0px 0px 0px 0px;
+      }
+      @media (max-width: 1000px) {
+        width: 100%;
+    }
+
+}
+
+.about-dataday{
+   background-color: $red;
+   width: 65%;
+   border-radius: 0px 490px 490px 0px;
+   padding: 80px 195px 110px 160px;
+   color: white;
+   @media (max-width: 1625px) {
+	width: 85%;
+	padding: 80px 155px 120px 80px;
+   }
+   @media (max-width: 1000px) {
+	width: 90%;
+	padding: 80px 55px 80px 80px;
+	border-radius: 0px 200px 200px 0px;
+ }
+
+ @media (max-width: 700px) {
+	border-radius: 20px 20px 20px 20px;
+	padding: 60px 20px 60px 40px;
+
+	width: 100%;
+ }
+}
+
+.what-is-dataday h2, .about-dataday h2 {
+	font-size: 4.1em;
+}
+
+.line-title-white{
+	height: 2px; 
+	width: 50%; 
+	background-color: white;
+}
+
+
+
+
+// What is 
+
+.what-is-section{
+	background-image: url(/dataday/images/que-es-dataday.jpg); 
+    width: 90%; 
+    background-size: cover;
+    background-position: center; 
+    border-radius: 0px 0px 190px 0px;
+	padding: 70px 0px 150px 0px;
+	@media (max-width: 1625px) {
+        width: 100%;
+		border-radius: 0px 0px 0px 0px;
+      }
+      @media (max-width: 1000px) {
+        width: 100%;
+		padding: 0px 0px 0px 0px;
+    }
+}
+
+
+.what-is-dataday{
+	background-color: $red;
+	width: 55%;
+	border-radius: 0px 490px 490px 0px;
+	padding: 80px 195px 110px 160px;
+	color: white;
+	@media (max-width: 1625px) {
+	 width: 85%;
+	 padding: 80px 155px 120px 80px;
+	}
+	@media (max-width: 1000px) {
+	 width: 90%;
+	 padding: 80px 55px 80px 80px;
+	 border-radius: 0px 200px 200px 0px;
+  }
+ 
+  @media (max-width: 700px) {
+	width: 100%;
+	 border-radius: 00px 0px 0px 0px;
+	 padding: 60px 20px 60px 40px;
+
+	font-size: .5em;
+	
+  }
+}
+
+
+// new seccion
+.about-img {
+	box-shadow: 0 15px 38px 0 rgba(0, 0, 0, 0.1);
+
+	.img-block {
+		position: absolute;
+		content: "";
+		bottom: -70px;
+		right: 0px;
+		left: 30%;
+		width: 100%;
+		border: 10px solid $white;
+
+		@include desktop {
+			left: 50%;
+			transform: translateX(-50%);
+			width: 80%;
+			bottom: -20px;
+		}
+	}
+}
+
+.stroke-text {
+	color: transparent;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #ddd;
+	font-size: 120px;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 1;
+
+	@include tablet {
+		font-size: 90px;
+	}
+	@include mobile {
+		font-size: 50px;
+	}
+}
+
+.text-lg {
+	font-size: 52px;
+	line-height: 1.1;
+}
+
+.ml-90 {
+	margin-left: 160px;
+
+	@include desktop {
+		margin-left: 0;
+	}
+}
+
+.about-section{
+	padding: 60px 0;
+}
+
+.event-info .row {
+	justify-content: space-around;
+}
+
+.event-info h3 {
+  text-transform: uppercase;
+  color: #303030;
+  font-size: 0.9em;
+}
+
+.event-info p {
+	font-size:0.8em;
+	margin-bottom: 1.2em;
+}
+
+.event-info a {
+    color: $primary-color;
+	font-family: $heading-font;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.event-info .content {
+	display: grid;
+	grid-gap: 32px;
+	grid-template-columns: 1fr;
+
+	@media (min-width:640px) {
+		grid-gap: 64px;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
+
+}
+
+.statistics-block {
+	display: grid;
+	width: 100%;
+	grid-gap: 32px 16px;
+	grid-template-columns: repeat(2, 1fr);
+
+	@media (min-width:640px) {
+		grid-gap: 32px;
+	}
+}
+
+.statistics-block .numbers {
+	font-size: 40px;
+
+	@media (min-width:640px) {
+		grid-gap: 56px;
+	}
+}
+
+.statistics-block .numbers:after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 64px;
+	background-color: $yellow;
+	margin-top: 10px;
+}
+
+.statistics-block .label {
+	margin-top: 4px;
+}
+

@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<div class="container mb-4">
+  <p class="text-center">
+      {{ .Content }}
+  </p>
+  <table data-toggle="table" data-sortable="true" data-search="true" data-search-align="left">
+    <thead>
+      <tr>
+        <th data-field="title" data-sortable="true">Título</th>
+        <th data-field="speaker">Speaker(s)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range .Data.Pages.ByTitle }}
+      <tr>
+        <td><a class="session-title" href="{{.Permalink}}">{{ .Params.title }}</a></td>
+        <td>{{ with .Params.speakers }}{{ delimit . ", " " & " }}{{ end }}</td>
+      </tr>    
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+
+{{ end }}

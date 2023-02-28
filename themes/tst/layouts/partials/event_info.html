@@ -1,0 +1,21 @@
+{{ $data := index .Site.Data }}
+
+<!-- About Section -->
+{{ with $data.homepage.event_info }}
+<section class="about-section" id="about-section">
+  <a id="event-info" style="padding-top: 40px; margin-top: -40px;"></a>
+  <div class="container event-info">
+    <div class="content">
+      {{ range .features }}
+      <div class="info-item">
+        <h3 class="label">{{ .label }}</h3>
+        <p>{{ .text }}</p>
+        <a href="{{ .cta_link }}">{{ .cta_text }}</a>
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+{{ end }}
+<!--End About Section -->

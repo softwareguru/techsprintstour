@@ -167,7 +167,9 @@
   .event-meta { grid-area: 2 / 1 / 3 / 2; }
   .cta { 
     grid-area: 1 / 2 / 2 / 3; 
-    align-self: end;   
+    align-self: end;
+    padding-bottom: 2em;
+
     @media (max-width: 768px) {
       padding-bottom: 4em;
     }

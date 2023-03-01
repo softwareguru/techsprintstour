@@ -58,7 +58,7 @@ home = "Home"
 
 # Meta data
 description = "Gira de eventos para intercambiar conocimiento y hacer networking con otros profesionistas de software en tu ciudad."
-images = ["images/card-2023.jpg"]
+images = ["images/card-generico.jpg"]
 twitter_user = "@revistasg"
 email = "eventos@sg.com.mx"
 author = "Software Guru"

@@ -1,20 +1,18 @@
 ---
-title: Acerca de TacOps
+title: Acerca de Tech Sprints Tour
 date: '2019-09-10T07:51:25.000+00:00'
 layout: pink
 
 ---
 
-TacOps será una conferencia enfocada en explorar herramientas y prácticas para gestionar infraestructura y operaciones de cómputo de forma ágil y eficiente para brindar servicios digitales con alta confiabilidad.
+Tech Sprints Tour es una gira de eventos para intercambiar conocimiento y hacer networking con otros profesionistas de software en tu ciudad. Platicaremos sobre las principales tendencias en nuestra profesión así como las oportunidades que tenemos abiertas desde Latinoamérica.
 
-### Temas
-TacOps se enfocará en tres grandes áreas temáticas: 
- * **Site Reliability Engineering (SRE)**: Aplica prácticas de ingeniería de software para gestionar y automatizar infraestructura de cómputo a gran escala.
- * **GitOps**: Aprender a utilizar repositorios Git para generar infraestructura como código.
- * **FinOps**: Optimiza los costos de infraestructura cloud.
+El Tech Sprints Tour es organizado por Softtek y Software Guru en colaboración con Platzi, Microsoft y comunidades locales de tecnología. En esta primer edición de la gira estaremos presentes en Monterrey, Aguascalientes y Bogotá.
 
-### ¿Cuándo y dónde?
-TacOps actualmente se encuentra en estatus de "evento propuesto". Ya tenemos los temas definidos y varias propuestas de sesiones, pero todavía no tenemos una fecha y sede confirmada. Su realización depende del interés de participantes y patrocinadores. Así que si te interesa que se realice, por favor llena el formato de preregistro.
+### ¿Por qué participar en el Tech Sprints Tour?
+* Conoce prácticas y herramientas modernas para construir software de alto desempeño.
+* Conecta con personas con intereses similares a los tuyos.
+* Impulsa tu carrera en tecnología.
 
 
 

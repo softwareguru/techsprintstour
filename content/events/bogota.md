@@ -1,7 +1,17 @@
 ---
 title: Bogotá
-date: '2019-09-10T07:51:25.000+00:00'
+date: 2023-02-03T08:00:00
+event_date: 2023-05-20T10:00:00
+images:
+ - /images/bog-card.jpg
+backimg: /images/bog-back.jpg
+register_link: https://sg.com.mx
+dia: 20
+mes: mayo
+sede: 
+
+draft: false
 
 ---
 
-Hola Bogotá
+Tech Sprints Tour visita Bogotá el sábado 20 de mayo. Pronto confirmaremos la sede y más detalles del evento.

@@ -239,21 +239,73 @@ hr.divider {
 	color: $orange;
 }
 
-
-.event-page .hero {
+.event-page .event-card-wrapper {
 	height: 100vh;
 	background-size: cover;	
 	background-position: 50%;
 }
 
-.monterrey .hero {
-    background-image: url(/images/mty-back.jpg);
+.event-card-wrapper .card-container {
+	height: 100%;
+	display: grid;
+	grid-template-columns: 55% 45% ;
+	grid-template-rows: 1fr fit-content(150px);
+  
+	.event-meta { grid-area: 2 / 1 / 3 / 2; }
+	.card-info { grid-area: 1 / 2 / 3 / 3; }
+  
 }
 
-.bogota .hero {
-    background-image: url(/images/bog-back.jpg);
+.card-info {
+	background-color: rgba(80,80,80,0.6);
+	align-self: center;
+	justify-self: center;
+	color: white;
+	font-size: 1.2em;
+	padding: 1.5em;
 }
 
-.aguascalientes .hero {
-    background-image: url(/images/ags-back.jpg);
+.event-card-wrapper .event-meta {
+    color: white;
+	line-height: 1;
+	padding-bottom: 1em;
+  
+	.fecha {
+	  margin-right:1.8em;
+	}
+	.dia {
+	  font-size: 5em;
+	  font-weight: 700;
+	}
+	.mes {
+	  font-size: 2.6em;
+	  font-weight: 500;
+	}
+	h3.ciudad {
+	  font-size: 3.2em;
+	  font-weight: 500;
+	}
+	hr {
+	  color: white;
+	  width: 30%;
+	  margin: 3px 0px;
+	  height: 5px;
+	  border: 0;
+	  background-color: white;
+	}
+	h5.sede {
+	  font-size: 2.6em;
+	  font-weight: 500;
+	}	
 }
+
+/* CSS */
+.button-hero.cta1 {
+	background-image: linear-gradient(92.88deg, #bd3377 9.16%, #cd2377 43.89%, #dd1377 64.72%);
+  }
+    
+  .section.page {
+	background-color: #bd3377;
+	padding-top: 80px;
+	color: white;
+  }

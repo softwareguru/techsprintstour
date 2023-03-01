@@ -1,11 +1,25 @@
 {{ define "main" }}
 <div class="event-page {{.Title | urlize }}">
-    <section class="hero">
-        <div class="date"></div>
-        <div class="city"></div>        
-    </section>
-    <section class="schedule">
-    </section>
+  <section class="event-card-wrapper" {{with .Params.backimg}}style="background-image: url('{{. | relURL}}');"{{end}}>
+    <div class="container card-container">
+      <div class="card-info">{{ .Content }}
+        <div class="mt-4 mb-5 text-right"><a href="{{.Permalink}}" class="button-hero cta1" role="button">Consulta la agenda y detalles</a></div>
+        <div class="text-right"><a href="{{.Permalink}}" class="button-hero cta2" role="button">Regístrate</a></div>
+      </div>
+      <div class="event-meta d-flex">
+        <div class="fecha">
+          <div class="dia">{{with .Params.dia}}{{.}}{{end}}</div>
+          <div class="mes">{{with .Params.mes}}{{.}}{{end}}</div>
+        </div>
+        <div class="lugar">
+          <h3 class="ciudad">{{.Title}}</h3>
+          <hr />
+          <h5 class="sede">{{with .Params.sede}}{{.}}{{end}}</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="schedule"></section>
 </div>
 
 {{ end }}

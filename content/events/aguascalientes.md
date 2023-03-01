@@ -9,7 +9,7 @@ register_link: https://sg.com.mx
 dia: 13
 mes: mayo
 sede: Softtek GDC
-draft: false
+formid: lk7PnHOT
 ---
 
 Tech Sprints Tour visita Aguascalientes el sábado 13 de mayo. Nos vemos en las instalaciones del Softtek GDC ubicadas en Av. Eugenio Garza Sada 902.

@@ -1,6 +1,6 @@
 {{ define "main" }}
-<div class="event-page {{.Title | urlize }}">
-  <section class="event-card-wrapper" {{with .Params.backimg}}style="background-image: url('{{. | relURL}}');"{{end}}>
+<div class="event-page">
+  <section class="event-card-wrapper {{.Title | urlize }}">
     <div class="container card-container">
       <div class="card-info">{{ .Content }}
         <div class="mt-4 mb-5 text-right"><a href="{{.Permalink}}" class="button-hero cta1" role="button">Consulta la agenda y detalles</a></div>

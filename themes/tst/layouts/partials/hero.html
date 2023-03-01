@@ -7,7 +7,7 @@
   </ol>
   <div class="carousel-inner">
     {{ range $index, $value := (where .Site.RegularPages.ByDate "Section" "events" ) }}
-    <div class="carousel-item home-card-wrapper {{if eq $index 0 }}active{{end}}" {{with $value.Params.backimg}}style="background-image: url('{{.}}')"{{end}}>
+    <div class="carousel-item home-card-wrapper {{$value.Title | urlize }} {{if eq $index 0 }}active{{end}}">
       <div class="container card-content">
         <div class="event-meta d-flex">
           <div class="fecha">

@@ -5,7 +5,7 @@ title = "Tech Sprints Tour"
 enableRobotsTXT = true
 RemovePathAccents = true
 
-googleAnalytics = ""
+googleAnalytics = "G-VQ9RVEW59D"
 
 theme = "tst"
 # post pagination

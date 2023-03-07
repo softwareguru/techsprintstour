@@ -277,6 +277,7 @@ hr.divider {
 	.card-info { grid-area: 1 / 2 / 3 / 3; }
 
 	@media (max-width: 768px) {
+		height:95%;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr fit-content(150px);
 	  

@@ -160,24 +160,29 @@
 
 .home-card-wrapper .card-content {
   height: 100%;
-  @media (max-width: 768px) {
-    height:95%;
-  }
   display: grid;
   grid-template-columns: 46% 54%;
   grid-template-rows: 1fr fit-content(200px);
 
-  .event-meta { grid-area: 2 / 1 / 3 / 2; }
+  @media (max-width: 768px) {
+    height:95%;
+    grid-template-columns: 1fr;
+  }
+
+  .event-meta { 
+    grid-area: 2 / 1 / 3 / 2; 
+  }
   .cta { 
     grid-area: 1 / 2 / 2 / 3; 
+    justify-self: center;
     align-self: end;
     padding-bottom: 2em;
-
     @media (max-width: 768px) {
-      padding-bottom: 4em;
+      grid-area: 1 / 1 / 2 / 2; 
     }
   }
 }
+
 
 .home-card-wrapper .event-meta {
   color: white;
@@ -214,19 +219,19 @@
 
   @media (max-width: 768px) {
     .fecha {
-      margin-right:1.4em;
+      margin-right:1em;
     }
     .dia {
-      font-size: 3em;
+      font-size: 2.8em;
     }
     .mes {
-      font-size: 2em;
+      font-size: 1.6em;
     }
     h3.ciudad {
-      font-size: 2.4em;
+      font-size: 2em;
     }
     h5.sede {
-      font-size: 2em;
+      font-size: 1.6em;
     }
     
   }

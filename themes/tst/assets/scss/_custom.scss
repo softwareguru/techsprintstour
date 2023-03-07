@@ -299,6 +299,7 @@ hr.divider {
     color: white;
 	line-height: 1;
 	padding-bottom: 2em;
+
   
 	.fecha {
 	  margin-right:1.8em;
@@ -326,7 +327,24 @@ hr.divider {
 	h5.sede {
 	  font-size: 2.6em;
 	  font-weight: 500;
-	}	
+	}
+	@media (max-width: 768px) {
+		.fecha {
+			margin-right:1em;
+		}
+		.dia {
+			font-size: 2.8em;
+		  }
+		.mes {
+			font-size: 1.6em;
+		}	  
+		h3.ciudad {
+			font-size: 2em;
+		  }
+		h5.sede {
+			font-size: 1.6em;
+		}
+	}
 }
 
 /* CSS */

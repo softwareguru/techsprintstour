@@ -3,7 +3,7 @@
   <section class="event-card-wrapper {{.Title | urlize }}">
     <div class="container card-container">
       <div class="card-info">{{ .Content }}
-        <div class="mt-4 mb-5 text-right"><a href="{{.Permalink}}" class="button-hero cta1" role="button">Consulta la agenda y detalles</a></div>
+<!---        <div class="mt-4 mb-5 text-right"><a href="{{.Permalink}}" class="button-hero cta1" role="button">Consulta la agenda y detalles</a></div> --->
         {{ with .Params.formid }}<div class="text-right"><button data-tf-popup="{{.}}" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Regístrate" data-tf-transitive-search-params data-tf-medium="snippet" class="button-hero cta2" role="button">Regístrate</button></div>{{ end }}
         <script src="//embed.typeform.com/next/embed.js"></script>
       </div>

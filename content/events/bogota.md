@@ -9,9 +9,9 @@ register_link: https://sg.com.mx
 dia: 20
 mes: mayo
 sede: 
-
+formid: NIqTqIEZ
 draft: false
 
 ---
 
-Tech Sprints Tour visita Bogotá el sábado 20 de mayo. Pronto confirmaremos la sede y más detalles del evento.
+Tech Sprints Tour visita Bogotá el sábado 20 de mayo. Pronto confirmaremos la sede y más detalles del evento. Mientras tanto, llena la forma para indicar tu interés.
